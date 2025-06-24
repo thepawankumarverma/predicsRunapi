@@ -55,8 +55,9 @@ def run_predictor():
         predicated_run=0
     
     return jsonify({'result':int(predicated_run)})
-if __name__=='__main__':
-    app.run(debug=True,port=4000)
+if __name__ == '__main__':
+    app.run(debug=False, host='0.0.0.0', port=10000)
+
 
 
 
